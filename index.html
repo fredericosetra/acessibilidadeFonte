@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Controle de fonte para acessibilidade</title>
+
+    <!-- Biblioteca JQuery -->
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+
+    <!-- Script com a função de aumentar a fonte -->
+    <script src="assets/js/fonte.js"></script>
+
+    <!-- Folha de estilo para controlar o visual -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+  </head>
+
+  <body>
+    <!-- Botões de Acessibilidade -->
+    <button onClick="fonte('aumentar')">Aumentar+</button>
+    <button onClick="fonte('fontePadrao')" title="Normal">
+      Fonte Original
+    </button>
+    <button onClick="fonte('diminuir');">Diminuir-</button>
+
+    <!--
+		Exemplos simples de aplicação
+		Basta adicionar a class .acessibilidade aos
+		elementos que devem ser afetados pela função
+	-->
+    <p class="acessibilidade">Olá eu sou um titulo;</p>
+
+    <p class="acessibilidade">Olá eu sou um subtitulo;</p>
+
+    <p>Olá eu sou um texto acessibilidade; (Não deve ser afetado)</p>
+
+    <ul class="acessibilidade">
+      <li>1 - Sou uma lista</li>
+      <li>2 - Sou uma lista</li>
+      <li>3 - Sou uma lista</li>
+    </ul>
+  </body>
+</html>
